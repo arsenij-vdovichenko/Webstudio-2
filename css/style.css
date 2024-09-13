@@ -11,3 +11,13 @@
     --borter-color:#EEEEEE;
     
 }
+
+.title{
+    font-family:"Raleway";
+    font-weight: 700;
+}
+
+.text{
+    font-family:"Roboto";
+    font-weight: 400;
+}
