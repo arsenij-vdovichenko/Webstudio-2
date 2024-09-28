@@ -21,3 +21,120 @@
     font-family:"Roboto";
     font-weight: 400px;
 }
+ 
+body{
+    font-family: "Roboto";
+}
+
+.header-logo{
+    color: var(--akcen-tcolor);
+font-size: 26px;
+font-weight: 700;
+line-height: 1.38;
+letter-spacing: 0.78px;
+}
+
+.header-span{
+    color: var(--akcen-tcolor);
+font-size: 26px;
+font-weight: 700;
+line-height: 1.38;
+letter-spacing: 0.78px;
+}
+.nav-link{
+    color: var(--akcen-tcolor);
+font-size: 14px;
+font-weight: 500;
+line-height: 1.14;
+letter-spacing: 0.28px;
+}
+
+.navcontent-item{
+font-size: 14px;
+font-weight: 500;
+line-height: 1.14;
+letter-spacing: 0.28px;
+}
+
+.nav-link:hover{
+    color: var(--akcen-tcolor);
+}
+.header-link{
+    color: var(--akcen-tcolor);
+font-size: 14px;
+font-weight: 500;
+line-height: 1.14;
+letter-spacing: 0.28px;
+}
+
+.headercontact-link:hover{
+    color: var(--akcen-tcolor);
+font-size: 14px;
+font-weight: 500;
+line-height: 1.14;
+letter-spacing: 0.28px;
+}
+
+.hero{
+    background-color: var(--footer-background);
+}
+
+.hero-title{
+    color: var(--title-color);
+text-align: center;
+font-size: 44px;
+font-weight: 900;
+line-height: 1.36; /* 136.364% */
+letter-spacing: 2.64px;
+text-transform: uppercase;
+}
+
+.hero-button{
+    color: var(--title-color);
+text-align: center;
+font-size: 16px;
+font-weight: 700;
+line-height: 1.87; /* 187.5% */
+letter-spacing: 0.96px;
+background-color: var(--akcen-tcolor);
+}
+
+.adventeges-title{
+    color: var(--et-textcolor);
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 1.14;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+}
+
+
+.adventeges-text{
+    color: var(--et-textcolor);
+font-size: 14px;
+font-weight: 400;
+line-height: 1.71; /* 171.429% */
+letter-spacing: 0.42px;
+}
+
+.workers{
+    color: var(--tem-background);
+}
+
+.workers-title{
+    color: var(--et-textcolor);
+text-align: center;
+font-size: 36px;
+font-weight: 700;
+line-height: 1.16;
+letter-spacing: 1.08px;
+}
+
+.workers-caption{
+text-align: center;
+font-size: 16px;
+font-weight: 500;
+line-height: 1.18;
+letter-spacing: 0.48px;
+}
