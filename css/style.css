@@ -35,32 +35,29 @@ letter-spacing: 0.78px;
 }
 
 .header-span{
-    color: var(--akcen-tcolor);
+    color: var(--logo-colot);
 font-size: 26px;
 font-weight: 700;
 line-height: 1.38;
 letter-spacing: 0.78px;
 }
+
+
 .nav-link{
-    color: var(--akcen-tcolor);
+    color: var(--main-text);
 font-size: 14px;
 font-weight: 500;
 line-height: 1.14;
 letter-spacing: 0.28px;
 }
 
-.navcontent-item{
-font-size: 14px;
-font-weight: 500;
-line-height: 1.14;
-letter-spacing: 0.28px;
-}
+
 
 .nav-link:hover{
     color: var(--akcen-tcolor);
 }
 .header-link{
-    color: var(--akcen-tcolor);
+    color: var(--et-textcolor);
 font-size: 14px;
 font-weight: 500;
 line-height: 1.14;
@@ -74,6 +71,7 @@ font-weight: 500;
 line-height: 1.14;
 letter-spacing: 0.28px;
 }
+
 
 .hero{
     background-color: var(--footer-background);
@@ -102,7 +100,6 @@ background-color: var(--akcen-tcolor);
 .adventeges-title{
     color: var(--et-textcolor);
 font-size: 14px;
-font-style: normal;
 font-weight: 700;
 line-height: 1.14;
 letter-spacing: 0.42px;
@@ -123,7 +120,7 @@ letter-spacing: 0.42px;
 }
 
 .workers-title{
-    color: var(--et-textcolor);
+    color: var(--main-text);
 text-align: center;
 font-size: 36px;
 font-weight: 700;
@@ -132,9 +129,89 @@ letter-spacing: 1.08px;
 }
 
 .workers-caption{
+    color:var(--main-text);
 text-align: center;
 font-size: 16px;
 font-weight: 500;
 line-height: 1.18;
+letter-spacing: 0.48px;
+}
+
+.workers-text{
+    color: var(--et-textcolor);
+text-align: center;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.18;
+letter-spacing: 0.48px;
+}
+
+
+.footer{
+    background-color: var(--footer-background);
+} 
+
+.footer-logo{
+    color: var(--akcen-tcolor);
+font-size: 26px;
+font-weight: 700;
+line-height: 1.38;
+letter-spacing: 0.78px;
+}
+
+.footer-span{
+    color: var(--title-color);
+font-size: 26px;
+font-weight: 700;
+line-height: 1.38;
+letter-spacing: 0.78px;
+}
+
+.footer-map{
+    color: var(--title-color);
+font-size: 14px;
+font-weight: 400;
+line-height: 1.71; /* 171.429% */
+letter-spacing: 0.42px;
+}
+
+.footer-email{
+    color: rgba(255, 255, 255, 0.60);
+font-size: 14px;
+font-weight: 400;
+line-height: 1.71; /* 171.429% */
+letter-spacing: 0.42px;
+}
+
+.footer-phone{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71; /* 171.429% */
+    letter-spacing: 0.42px;
+}
+
+.hero-btn:hover{
+    color: var(--title-color);
+width: 125px;
+height: 38px;
+flex-shrink: 0;
+background-color: var(--akcen-tcolor);
+}
+
+.portfolio-caption{
+    color: var(--main-text);
+font-size: 18px;
+font-weight: 700;
+line-height: 2.00; /* 200% */
+letter-spacing: 1.08px;
+}
+
+.portfolio-text{
+    color: var(--et-textcolor);
+font-size: 16px;
+font-weight: 400;
+line-height: 1.87; /* 187.5% */
 letter-spacing: 0.48px;
 }
