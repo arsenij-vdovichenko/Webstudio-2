@@ -12,6 +12,12 @@
     
 }
 
+.body{
+    font-family: "Roboto";
+}
+
+
+
 .title{
     font-family:"Raleway";
     font-weight: 700px;
@@ -72,6 +78,13 @@ line-height: 1.14;
 letter-spacing: 0.28px;
 }
 
+.headercontact-item{
+    color: var(--et-textcolor);
+font-size: 14px;
+font-weight: 500;
+line-height: 1.14;
+letter-spacing: 0.28px;
+}
 
 .hero{
     background-color: var(--footer-background);
@@ -98,7 +111,7 @@ background-color: var(--akcen-tcolor);
 }
 
 .adventeges-title{
-    color: var(--et-textcolor);
+    color: var(--main-text);
 font-size: 14px;
 font-weight: 700;
 line-height: 1.14;
@@ -120,7 +133,7 @@ letter-spacing: 0.42px;
 }
 
 .workers-title{
-    color: ;
+    color: var(--main-text);
 text-align: center;
 font-size: 36px;
 font-weight: 700;
