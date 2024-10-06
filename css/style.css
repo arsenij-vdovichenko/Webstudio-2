@@ -37,13 +37,13 @@
 
 .adventeges{
     padding-top: 94px;
-    padding-bottom: 56px;
+    padding-bottom: 94px;
 }
 
 
 
 .work{
-    padding-top: 56px;
+    
     padding-bottom: 94px;
 }
 
@@ -57,6 +57,11 @@
 .heroportfolio{
     padding-top: 94px;
     padding-bottom: 94px;
+}
+
+.footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .body{
@@ -125,6 +130,14 @@ line-height: 1.14;
 letter-spacing: 0.28px;
 }
 
+.headercontact-link{
+    color: var(--et-textcolor);
+font-size: 14px;
+font-weight: 500;
+line-height: 1.14;
+letter-spacing: 0.28px;
+}
+
 .headercontact-item{
     color: var(--et-textcolor);
 font-size: 14px;
@@ -132,6 +145,7 @@ font-weight: 500;
 line-height: 1.14;
 letter-spacing: 0.28px;
 }
+
 
 .hero{
     background-color: var(--footer-background);
@@ -173,6 +187,15 @@ font-size: 14px;
 font-weight: 400;
 line-height: 1.71; /* 171.429% */
 letter-spacing: 0.42px;
+}
+
+.work-title{
+    color: var(--main-text);
+text-align: center;
+font-size: 36px;
+font-weight: 700;
+line-height: 1.16;
+letter-spacing: 1.08px;
 }
 
 .workers{
