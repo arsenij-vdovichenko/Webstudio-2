@@ -91,6 +91,7 @@ body{
 
 .header-logo{
     color: var(--akcen-tcolor);
+    font-family: Raleway;
 font-size: 26px;
 font-weight: 700;
 line-height: 1.38;
@@ -135,6 +136,14 @@ letter-spacing: 0.28px;
     display: flex;
     gap: 50px;
     margin-left: auto;
+}
+
+.header-link:hover{
+    color: var(--akcen-tcolor);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.28px;
 }
 
 .header-link{
