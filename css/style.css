@@ -287,16 +287,17 @@ margin-bottom: 50px;
     gap: 30px;
 }
 
-.workers-item{
-    border-radius: 0px 0px 4px 4px;
-background: #FFF;
-
-}
-
 .workers-img{
     width: 270px;
 height: 260px;
-margin-bottom: 30px;
+}
+
+.workers-div{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 0px 0px 4px 4px;
+    background: #FFF;
+    
 }
 
 .workers-caption{
@@ -316,7 +317,6 @@ margin-bottom: 10px;
     font-weight: 400;
     line-height: 1.18;
     letter-spacing: 0.48px;
-    margin-bottom: 30px;
 }
 
 
@@ -330,6 +330,9 @@ font-size: 26px;
 font-weight: 700;
 line-height: 1.38;
 letter-spacing: 0.78px;
+}
+.footer-div{
+    padding-top: 20px;
 }
 
 .footer-span{
@@ -346,8 +349,7 @@ font-size: 14px;
 font-weight: 400;
 line-height: 1.71; /* 171.429% */
 letter-spacing: 0.42px;
-margin-top: 20px;
-margin-bottom: 9px;
+padding-bottom: 9px;
 }
 
 .footer-email{
@@ -356,7 +358,7 @@ font-size: 14px;
 font-weight: 400;
 line-height: 1.71; /* 171.429% */
 letter-spacing: 0.42px;
-margin-bottom: 9px;
+padding-bottom: 9px;
 }
 
 .footer-phone{
@@ -389,9 +391,10 @@ border: none;
     flex-wrap: wrap;
 }
 
-
-.portfolio-item{
+.portfolio-div{
     border: 1px solid #EEE;
+    margin-bottom: 30px;
+    padding-left: 24px;
 }
 
 .portfolio-caption{
