@@ -228,6 +228,41 @@ justify-content: center;
 }
 
 
+
+.adventeges-title::before{
+    content: "";
+    display: block;
+    width: 270px;
+height: 120px;
+flex-shrink: 0;
+border-radius: 4px;
+background-color: var(--tem-background);
+margin-bottom: 30px;
+ background-position: center;
+background-repeat: no-repeat;
+
+}
+
+.adventeges-title:nth-child(1)::before{
+    background-image: url(../img/antenna.png);
+   
+}
+
+.adventeges-title:nth-child(2)::before{
+    background-image: url(../img/clock.png);
+  
+}
+
+.adventeges-title:nth-child(3)::before{
+    background-image: url(../img/diagram.png);
+ 
+}
+
+.adventeges-title:nth-child(4)::before{
+    background-image: url(../img/astronaut.png);
+
+}
+
 .adventeges-title{
     color: var(--main-text);
 font-size: 14px;
