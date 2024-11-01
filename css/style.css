@@ -229,7 +229,7 @@ justify-content: center;
 
 
 
-.adventeges-title::before{
+.adventeges-item::before{
     content: "";
     display: block;
     width: 270px;
@@ -243,22 +243,22 @@ background-repeat: no-repeat;
 
 }
 
-.adventeges-title:nth-child(1)::before{
+.adventeges-item:nth-child(1)::before{
     background-image: url(../img/antenna.png);
    
 }
 
-.adventeges-title:nth-child(2)::before{
+.adventeges-item:nth-child(2)::before{
     background-image: url(../img/clock.png);
   
 }
 
-.adventeges-title:nth-child(3)::before{
+.adventeges-item:nth-child(3)::before{
     background-image: url(../img/diagram.png);
  
 }
 
-.adventeges-title:nth-child(4)::before{
+.adventeges-item:nth-child(4)::before{
     background-image: url(../img/astronaut.png);
 
 }
