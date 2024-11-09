@@ -186,12 +186,14 @@ letter-spacing: 0.28px;
 
 
 .hero{
-    background-color: var(--footer-background);
+    
+    background-image: url(../img/hero.webp);
+    text-align: center;
+     background-repeat: no-repeat;
+     background-size: cover;
 }
 
-.hero{
-    text-align: center;
-}
+
 
 .hero-title{
     color: var(--title-color);
@@ -443,6 +445,11 @@ border: none;
     flex-wrap: wrap;
     flex-basis: calc(33.33% - 20px); 
   box-sizing: border-box;
+}
+
+.portfolio-item{
+    outline: 1px solid #EEE;
+    flex-basis: calc((100% - 60px) / 3);
 }
 
 .shadow-div{
