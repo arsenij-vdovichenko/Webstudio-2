@@ -144,13 +144,15 @@ letter-spacing: 0.28px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.28px;
+    .head-icon{
+        fill: #2196F3;
+    }
 }
 
 .head-icon{
     width: 16px;
 height: 12px;
 flex-shrink: 0;
-
 }
 
 .header-link{
@@ -159,6 +161,7 @@ font-size: 14px;
 font-weight: 500;
 line-height: 1.14;
 letter-spacing: 0.28px;
+display: flex;
 }
 
 .headercontact-link:hover{
@@ -438,9 +441,12 @@ flex-shrink: 0;
 margin: 16px 36px;
 }
 
-.client-icon:hover{
-    background-color: #2196F3;
-
+.client-link:hover{
+    border: 1px solid #2196F3;
+    border: none;
+    .client-icon{
+        fill: #2196F3;
+    }
 }
 
 
