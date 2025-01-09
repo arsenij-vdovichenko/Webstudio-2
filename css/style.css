@@ -503,6 +503,55 @@ letter-spacing: 0.42px;
     line-height: 1.71; /* 171.429% */
     letter-spacing: 0.42px;
 }
+.footer-title{
+    color: #FFF;
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.fotersvg-list{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 26px;
+    margin-bottom: 30px;
+    align-items: baseline;
+}
+
+
+.fotersvg-link{
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fotersvg-link:hover{
+    background-color: #2196F3;
+    .fotersvg-icon{
+        fill: #FFF;
+    }
+    
+}
+
+.fotersvg-icon{
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    fill: grey;
+}
 
 .hero-btn{
     color: #212121;
