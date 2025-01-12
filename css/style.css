@@ -152,8 +152,10 @@ letter-spacing: 0.28px;
 .head-icon{
     width: 16px;
 height: 12px;
-flex-shrink: 0;
+fill: #757575;
+margin-right: 10px;
 }
+
 
 .header-link{
     color: var(--et-textcolor);
@@ -161,7 +163,7 @@ font-size: 14px;
 font-weight: 500;
 line-height: 1.14;
 letter-spacing: 0.28px;
-display: flex;
+
 }
 
 .headercontact-link:hover{
@@ -181,6 +183,8 @@ font-size: 14px;
 font-weight: 500;
 line-height: 1.14;
 letter-spacing: 0.28px;
+display: flex;
+align-items: center;
 }
 
 .headercontact-list{
@@ -403,7 +407,6 @@ margin-bottom: 10px;
     gap: 10px;
     justify-content: center;
     margin-top: 26px;
-    margin-bottom: 30px;
     
 }
 
@@ -429,13 +432,16 @@ align-items: center;
     width: 20px;
     height: 20px;
     flex-shrink: 0;
-    fill: grey;
+    fill: #AFB1B8;
+}
+
+.client{
+    padding-top: 94px;
+    padding-bottom: 50px;
 }
 .client-title{
     display: flex;
     justify-content: center;
-    padding-top: 94px;
-    padding-bottom: 50px;
 }
 
 .client-item{
@@ -445,17 +451,22 @@ align-items: center;
     padding-bottom: 94px;
 }
 
-.client-element{
-    width: 170px;
-height: 92px;
-flex-shrink: 0;
-border-radius: 4px;
-border: 1px solid #AFB1B8;
-}
+
 
 .client-element:hover{
     border: 1px solid #2196F3;
-    
+    border-radius: 4px;
+}
+
+.client-link{
+    width: 170px;
+    height: 92px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid #AFB1B8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .client-icon{
@@ -463,6 +474,7 @@ border: 1px solid #AFB1B8;
 height: 60px;
 flex-shrink: 0;
 margin: 16px 36px;
+fill: #AFB1B8;
 }
 
 .client-link:hover{
@@ -545,10 +557,10 @@ display: flex;
 .fotersvg-list{
     display: flex;
     gap: 10px;
-    justify-content: center;
+    justify-content: baseline;
+    align-items: baseline;
     margin-top: 26px;
     margin-bottom: 30px;
-    align-items: baseline;
 }
 
 
@@ -558,8 +570,8 @@ display: flex;
     flex-shrink: 0;
     border-radius: 50%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: baseline;
+    align-items: baseline;
 }
 
 .fotersvg-link:hover{
