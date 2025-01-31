@@ -134,11 +134,13 @@ letter-spacing: 0.28px;
 
 .header-list{
     display: flex;
+    align-items: center;
     gap: 30px;
     margin-left: auto;
 }
 
-.header-link:hover{
+.header-link:hover,
+.header-link:focus{
     color: var(--akcen-tcolor);
     font-size: 14px;
     font-weight: 500;
@@ -170,7 +172,8 @@ letter-spacing: 0.28px;
 
 }
 
-.headercontact-link:hover{
+.headercontact-link:hover,
+.headercontact-link:focus{
     color: var(--akcen-tcolor);
 font-size: 14px;
 font-weight: 500;
@@ -425,7 +428,8 @@ justify-content: center;
 align-items: center;
 }
 
-.workers-link:hover{
+.workers-link:hover,
+.workers-link:focus{
     background-color: #2196F3;
     .workers-icon{
         fill: #FFF;
@@ -486,9 +490,10 @@ height: 60px;
 fill: #AFB1B8;
 }
 
-.client-link:hover{
+.client-link:hover,
+.client-link:focus{
     border: 1px solid #2196F3;
-    border: none;
+    
     .client-icon{
         fill: #2196F3;
     }
@@ -580,9 +585,11 @@ text-transform: uppercase;
     justify-content: center;
     align-items: center;
     background-color:  rgba(255, 255, 255, 0.10);
+    
 }
 
-.fotersvg-link:hover{
+.fotersvg-link:hover,
+.fotersvg-link:focus{
     background-color: #2196F3;
     .fotersvg-icon{
         fill: #FFF;
@@ -596,6 +603,63 @@ text-transform: uppercase;
     flex-shrink: 0;
     fill: var(--title-color);
 }
+.footer-label{
+    color: #FFF;
+
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+padding-bottom: 20px;
+}
+
+.footer-input{
+    width: 358px;
+height: 50px;
+border-radius: 4px;
+border: 1px solid rgba(255, 255, 255, 0.30);
+background: rgba(33, 150, 243, 0.00);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+display: flex;
+flex-direction: column;
+justify-content: center;
+color: rgba(255, 255, 255, 0.60);
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 125% */
+letter-spacing: 0.48px;
+padding-left: 16px;
+}
+.footer-button{
+    width: 200px;
+height: 50px;
+border-radius: 4px;
+background: #2196F3;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+color: #FFF;
+text-align: center;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 30px; /* 187.5% */
+letter-spacing: 0.96px;
+}
+
+.button-svg{
+    width: 24px;
+height: 24px;
+fill: #FFF;
+margin-left: 10px;
+
+
+}
+
 .footer-box{
     margin-left: 70px;
 }
