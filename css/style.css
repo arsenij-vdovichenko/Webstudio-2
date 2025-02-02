@@ -169,7 +169,8 @@ font-size: 14px;
 font-weight: 500;
 line-height: 1.14;
 letter-spacing: 0.28px;
-
+display: flex;
+align-items: center;
 }
 
 .headercontact-link:hover,
@@ -335,7 +336,7 @@ margin-bottom: 50px;
     align-items: center;
 }
 
-.text{
+.work-text{
     color: #FFF;
     background: rgba(47, 48, 58, 0.80);
     position: absolute;
