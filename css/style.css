@@ -577,7 +577,7 @@ text-transform: uppercase;
 }
 
 
-.fotersvg-link{
+.footersvg-link{
     width: 44px;
     height: 44px;
     flex-shrink: 0;
@@ -589,8 +589,8 @@ text-transform: uppercase;
     
 }
 
-.fotersvg-link:hover,
-.fotersvg-link:focus{
+.footersvg-link:hover,
+.footersvg-link:focus{
     background-color: #2196F3;
     .fotersvg-icon{
         fill: #FFF;
@@ -598,11 +598,18 @@ text-transform: uppercase;
     
 }
 
-.fotersvg-icon{
+.footersvg-icon{
     width: 20px;
     height: 20px;
     flex-shrink: 0;
     fill: var(--title-color);
+}
+
+.label-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 .footer-label{
     color: #FFF;
@@ -614,7 +621,9 @@ font-weight: 700;
 line-height: normal;
 letter-spacing: 0.42px;
 text-transform: uppercase;
-padding-bottom: 20px;
+margin-left: 93px;
+
+
 }
 
 .footer-input{
@@ -634,7 +643,9 @@ font-style: normal;
 font-weight: 400;
 line-height: 20px; /* 125% */
 letter-spacing: 0.48px;
-padding-left: 16px;
+margin-top: 20px;
+
+
 }
 .footer-button{
     width: 200px;
@@ -650,6 +661,9 @@ font-style: normal;
 font-weight: 700;
 line-height: 30px; /* 187.5% */
 letter-spacing: 0.96px;
+margin-left: 12px;
+margin-top: 20px;
+
 }
 
 .button-svg{
@@ -784,8 +798,8 @@ left: 12px;
 }
 
 .modal-coment{
-    width: 416px;
-height: 96px;
+    width: 448px;
+height: 120px;
 resize: none;
 padding-left: 16px;
 padding-right: 16px;
