@@ -8,6 +8,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     
@@ -18,9 +23,9 @@
         <a href="./index.html" class="header-logo">Web<span class="header-span">Studio</span></a>
         <nav class="header-nav">
             <ul class="nav-list">
-                <li class="nav-item"><a href="./index.html" class="nav-link active">Студія</a></li>
-                <li class="nav-item"><a href="./pages/portfolio.html" class="nav-link">Портфоліо</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Контакти</a></li>
+                <li class="nav-item "><a href="./index.html" class="nav-link active" data-aos="fade-right">Студія</a></li>
+                <li class="nav-item"><a href="./pages/portfolio.html" class="nav-link animate__animated animate__fadeInLeft">Портфоліо</a></li>
+                <li class="nav-item"><a href="#" class="nav-link animate__animated animate__rotateInDownLeft">Контакти</a></li>
             </ul>
         </nav>
         <ul class="header-list">
@@ -69,7 +74,7 @@
             <div class="container">
              <h2 class="work-title">Чим ми займаємося</h2>
             <ul class="work-list">
-                <li class="work-item">
+                <li class="work-item animate__animated ">
                     <img src="./img/programmer.jpg" alt="programmer" class="work-img">
                     <p class="work-text">Десктопні додатки</p>
                 </li>
@@ -398,5 +403,9 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
