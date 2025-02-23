@@ -158,31 +158,15 @@ opacity: 0;
     margin-left: auto;
 }
 
-.header-link:hover,
-.header-link:focus{
-    color: var(--akcen-tcolor);
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.28px;
-    .head-icon{
-        fill: #2196F3;
-    }
+.headercontact-item{
+    color: var(--et-textcolor);
+font-size: 14px;
+font-weight: 500;
+line-height: 1.14;
+letter-spacing: 0.28px;
 }
 
-.head-icon{
-    width: 16px;
-height: 12px;
-fill: #757575;
-margin-right: 10px;
-}
-
-.header-item .head-icon{
-    width: 10px;
-    height: 16px;
-}
-
-.header-link{
+.headercontact-link{
     color: var(--et-textcolor);
 font-size: 14px;
 font-weight: 500;
@@ -204,7 +188,21 @@ letter-spacing: 0.28px;
 }
 }
 
-.headercontact-link{
+.header-link:hover,
+.header-link:focus{
+    color: var(--akcen-tcolor);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.28px;
+    .head-icon{
+        fill: #2196F3;
+    }
+}
+
+
+
+.header-link{
     color: var(--et-textcolor);
 font-size: 14px;
 font-weight: 500;
@@ -214,19 +212,19 @@ display: flex;
 align-items: center;
 }
 
-.headercontact-list{
-    display: flex;
-    gap: 50px;
-    margin-left: auto;
+.head-icon{
+    width: 16px;
+height: 12px;
+fill: #757575;
+margin-right: 10px;
 }
 
-.headercontact-item{
-    color: var(--et-textcolor);
-font-size: 14px;
-font-weight: 500;
-line-height: 1.14;
-letter-spacing: 0.28px;
+.header-item .head-icon{
+    width: 10px;
+    height: 16px;
 }
+
+
 
 
 .hero{
@@ -275,7 +273,10 @@ margin-bottom: 50px;
 justify-content: center;
 }
 
-
+.adventeges-list{
+    display: flex;
+    gap: 30px;
+}
 
 .adventeges-item::before{
     content: "";
@@ -320,11 +321,6 @@ letter-spacing: 0.42px;
 text-transform: uppercase;
 margin-bottom: 10px;
 
-}
-
-.adventeges-list{
-    display: flex;
-    gap: 30px;
 }
 
 .adventeges-text{
@@ -505,12 +501,6 @@ letter-spacing: 1.08px;
     align-items: center;
 }
 
-.client-icon{
-    width: 106px;
-height: 60px;
-fill: #AFB1B8;
-}
-
 .client-link:hover,
 .client-link:focus{
     border: 1px solid #2196F3;
@@ -519,6 +509,14 @@ fill: #AFB1B8;
         fill: #2196F3;
     }
 }
+
+.client-icon{
+    width: 106px;
+height: 60px;
+fill: #AFB1B8;
+}
+
+
 
 
 .footer{
@@ -536,10 +534,6 @@ font-weight: 700;
 line-height: 1.38;
 letter-spacing: 0.78px;
 }
-.footer-address{
-    margin-top: 20px;
-}
-
 .footer-span{
     color: var(--title-color);
 font-size: 26px;
@@ -547,6 +541,11 @@ font-weight: 700;
 line-height: 1.38;
 letter-spacing: 0.78px;
 }
+
+.footer-address{
+    margin-top: 20px;
+}
+
 
 .footer-map{
     color: var(--title-color);
