@@ -1,9 +1,9 @@
 .workers{
-    background-color: var(--tem-background);
+    background-color: $tem-background;
 }
 
 .workers-title{
-    color: var(--main-text);
+    color: $main-text;
 text-align: center;
 font-size: 36px;
 font-weight: 700;
@@ -36,7 +36,7 @@ height: 260px;
 }
 
 .workers-caption{
-    color: var(--main-text);
+    color: $main-text;
 text-align: center;
 font-size: 16px;
 font-weight: 500;
@@ -46,7 +46,7 @@ margin-bottom: 10px;
 }
 
 .workers-text{
-    color: var(--et-textcolor);
+    color: $et-textcolor;
     text-align: center;
     font-size: 16px;
     font-weight: 400;

@@ -7,14 +7,14 @@
 }
 
 .footer-logo{
-    color: var(--akcen-tcolor);
+    color: $akcen-tcolor;
 font-size: 26px;
 font-weight: 700;
 line-height: 1.38;
 letter-spacing: 0.78px;
 }
 .footer-span{
-    color: var(--title-color);
+    color: $title-color;
 font-size: 26px;
 font-weight: 700;
 line-height: 1.38;
@@ -27,7 +27,7 @@ letter-spacing: 0.78px;
 
 
 .footer-map{
-    color: var(--title-color);
+    color: $title-color;
 font-size: 14px;
 font-weight: 400;
 line-height: 1.71; /* 171.429% */
@@ -100,7 +100,7 @@ text-transform: uppercase;
     width: 20px;
     height: 20px;
     flex-shrink: 0;
-    fill: var(--title-color);
+    fill: $title-color;
 }
 
 .label-div{

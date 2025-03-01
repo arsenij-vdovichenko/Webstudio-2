@@ -4,7 +4,7 @@
 }
 
 .header-logo{
-    color: var(--akcen-tcolor);
+    color: $akcen-tcolor;
     font-family: Raleway;
 font-size: 26px;
 font-weight: 700;
@@ -14,7 +14,7 @@ margin-right: 93px;
 }
 
 .header-span{
-    color: var(--logo-colot);
+    color: $logo-colot;
 font-size: 26px;
 font-weight: 700;
 line-height: 1.38;
@@ -33,7 +33,7 @@ letter-spacing: 0.78px;
 
 
 .nav-link{
-    color: var(--main-text);
+    color: $main-text;
 font-size: 14px;
 font-weight: 500;
 line-height: 1.14;
@@ -58,11 +58,11 @@ opacity: 0;
 }
 
 .active{
-    color: var(--akcen-tcolor);
+    color: $akcen-tcolor;
 }
 
 .nav-link:hover{
-    color: var(--akcen-tcolor);
+    color: $akcen-tcolor;
 }
 
 .header-list{
@@ -73,7 +73,7 @@ opacity: 0;
 }
 
 .headercontact-item{
-    color: var(--et-textcolor);
+    color: $et-textcolor;
 font-size: 14px;
 font-weight: 500;
 line-height: 1.14;
@@ -81,7 +81,7 @@ letter-spacing: 0.28px;
 }
 
 .headercontact-link{
-    color: var(--et-textcolor);
+    color: $et-textcolor;
 font-size: 14px;
 font-weight: 500;
 line-height: 1.14;
@@ -92,7 +92,7 @@ align-items: center;
 
 .headercontact-link:hover,
 .headercontact-link:focus{
-    color: var(--akcen-tcolor);
+    color: $akcen-tcolor;
 font-size: 14px;
 font-weight: 500;
 line-height: 1.14;
@@ -104,7 +104,7 @@ letter-spacing: 0.28px;
 
 .header-link:hover,
 .header-link:focus{
-    color: var(--akcen-tcolor);
+    color: $akcen-tcolor;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
@@ -117,7 +117,7 @@ letter-spacing: 0.28px;
 
 
 .header-link{
-    color: var(--et-textcolor);
+    color: $et-textcolor;
 font-size: 14px;
 font-weight: 500;
 line-height: 1.14;
