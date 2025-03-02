@@ -1,3 +1,7 @@
+.heroportfolio{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .hero-btn{
     color: #212121;
 text-align: center;
@@ -5,7 +9,7 @@ font-family: Roboto;
 font-size: 16px;
 font-style: normal;
 font-weight: 500;
-line-height: 26px; /* 162.5% */
+line-height: 26px; 
 letter-spacing: 0.48px;
     padding: 6px 22px;
     border-radius: 4px;
@@ -14,9 +18,9 @@ border: none;
 }
 
 .hero-btn:hover{
-    color: var(--title-color);
+    color: $title-color;
 flex-shrink: 0;
-background-color: var(--akcen-tcolor);
+background-color: $akcen-tcolor;
 border-radius: 4px;
 border: none;
 /* shadow-middle */
@@ -82,7 +86,7 @@ letter-spacing: 0.54px;
 }
 
 .portfolio-caption{
-    color: var(--main-text);
+    color: $main-text;
 font-size: 18px;
 font-weight: 700;
 line-height: 2.00; /* 200% */
@@ -91,7 +95,7 @@ margin-bottom: 4px;
 }
 
 .portfolio-text{
-    color: var(--et-textcolor);
+    color: $et-textcolor;
 font-size: 16px;
 font-weight: 400;
 line-height: 1.87; /* 187.5% */

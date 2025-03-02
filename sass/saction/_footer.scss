@@ -1,5 +1,7 @@
 .footer{
-    background-color: var(--footer-background);
+    background-color: $footer-background;
+    padding-top: 60px;
+    padding-bottom: 60px;
 } 
 .footer-wrap{
     display: flex;
