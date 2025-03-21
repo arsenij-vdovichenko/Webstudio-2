@@ -25,6 +25,7 @@ border-radius: 4px;
 border: none;
 /* shadow-middle */
 box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+@extend %css-transition;
 }
 
 .portfolio-list{
@@ -83,6 +84,7 @@ font-style: normal;
 font-weight: 400;
 line-height: 28px; 
 letter-spacing: 0.54px;
+
 }
 
 .portfolio-caption{

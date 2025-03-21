@@ -21,7 +21,7 @@ address {
   font-style: normal;
 }
 
-.client-icon, .client-link {
+.hero-btn:hover, .footersvg-link, .client-icon, .client-link, .workers-link, .header__link {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -129,62 +129,12 @@ body {
   color: #2196F3;
 }
 
-.navlink:hover {
-  color: #2196F3;
-}
-
 .header__item {
   color: #757575;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.28px;
-}
-
-.header__link {
-  color: #757575;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.28px;
-  display: flex;
-  align-items: center;
-}
-
-.header-link:hover,
-.header-link:focus {
-  color: #2196F3;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.28px;
-}
-.header-link:hover .head__icon,
-.header-link:focus .head__icon {
-  fill: #2196F3;
-}
-
-.header-link:hover,
-.header-link:focus {
-  color: #2196F3;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.28px;
-}
-.header-link:hover .head__icon,
-.header-link:focus .head__icon {
-  fill: #2196F3;
-}
-
-.header-link {
-  color: #757575;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.28px;
-  display: flex;
-  align-items: center;
 }
 
 .header-item .head__icon {
@@ -290,7 +240,7 @@ body {
   color: #757575;
   font-size: 14px;
   font-weight: 400;
-  line-height: 1.71; /* 171.429% */
+  line-height: 1.71;
   letter-spacing: 0.42px;
 }
 

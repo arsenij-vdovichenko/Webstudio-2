@@ -41,6 +41,7 @@
     letter-spacing: 0.28px;
     display: flex;
     align-items: center;
+    @extend %css-transition;
 
     &link:hover,
 &:focus{
@@ -109,9 +110,7 @@ opacity: 0;
     color: $akcen-tcolor;
 }
 
-.navlink:hover{
-    color: $akcen-tcolor;
-}
+
 
 
 
@@ -123,51 +122,14 @@ line-height: 1.14;
 letter-spacing: 0.28px;
 }
 
-.header__link{
-    color: $et-textcolor;
-font-size: 14px;
-font-weight: 500;
-line-height: 1.14;
-letter-spacing: 0.28px;
-display: flex;
-align-items: center;
-}
-
-.header-link:hover,
-.header-link:focus{
-    color: $akcen-tcolor;
-font-size: 14px;
-font-weight: 500;
-line-height: 1.14;
-letter-spacing: 0.28px;
-.head__icon{
-    fill: $akcen-tcolor;
-}
-}
-
-.header-link:hover,
-.header-link:focus{
-    color: $akcen-tcolor;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.28px;
-    .head__icon{
-        fill: $akcen-tcolor;
-    }
-}
 
 
 
-.header-link{
-    color: $et-textcolor;
-font-size: 14px;
-font-weight: 500;
-line-height: 1.14;
-letter-spacing: 0.28px;
-display: flex;
-align-items: center;
-}
+
+
+
+
+
 
 
 
