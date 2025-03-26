@@ -6,6 +6,9 @@
 .footer-wrap{
     display: flex;
     align-items: baseline;
+    @media screen and (min-width : 768px) {
+        flex-direction: row;
+      }
 }
 
 .footer-logo{
@@ -14,6 +17,10 @@ font-size: 26px;
 font-weight: 700;
 line-height: 1.38;
 letter-spacing: 0.78px;
+@media screen and (min-width : 1200px) {
+    font-size: 26px;
+    letter-spacing: 0.78px;
+  }
 }
 .footer-span{
     color: $title-color;
