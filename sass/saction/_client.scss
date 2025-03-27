@@ -5,87 +5,100 @@
         padding-top: 94px;
         padding-bottom: 94px;
       }
-}
-.client-title{
-    color: $main-text;
-text-align: center;
-font-size: 36px;
-font-weight: 700;
-line-height: 1.16;
-letter-spacing: 1.08px;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-    @media screen and (min-width: 1200px){
+
+      &__title{
+        color: $main-text;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.16;
+    letter-spacing: 1.08px;
+        display: flex;
+        justify-content: center;
         margin-bottom: 50px;
-        font-size: 36px;
-        letter-spacing: 1.08px;
-      }
-}
+        @media screen and (min-width: 1200px){
+            margin-bottom: 50px;
+            font-size: 36px;
+            letter-spacing: 1.08px;
+          }
+    }
 
-.client-item{
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    @media screen and (min-width: 480px){
-        flex-basis: calc((100% - 30px) / 2);
-     }
-     @media screen and (min-width: 768px){
-       flex-basis: calc((100% - 60px) / 3);
-     }
-     @media screen and (min-width: 1200px){
-       flex-basis: calc((100% - 150px) / 6);
-     }
-}
+    &__item{
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      @media screen and (min-width: 480px){
+          flex-basis: calc((100% - 30px) / 2);
+       }
+       @media screen and (min-width: 768px){
+         flex-basis: calc((100% - 60px) / 3);
+       }
+       @media screen and (min-width: 1200px){
+         flex-basis: calc((100% - 150px) / 6);
+       }
+  }
 
-
-
-.client-element:hover{
-    border: 1px solid #2196F3;
+  &__element:hover{
+    border: 1px solid $akcen-tcolor;
     border-radius: 4px;
 }
 
-.client-link{
-    width: 170px;
-    height: 92px;
-    border-radius: 4px;
-   outline: 1px solid #AFB1B8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition-property: outline;
-    
-    // transition-duration: 250ms;
-    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
-    @extend %css-transition;
-    @media screen and (min-width:486px) {
-        width: 210px;
-      }
-      @media screen and (min-width:768px) {
-        width: 226px;
-      }
-      @media screen and (min-width:1200px) {
-        width: 170px;
-      }
-}
-
-.client-link:hover,
-.client-link:focus{
-    border: none;
-    outline: 1px solid #2196F3;
-    
-    .client-icon{
-        fill: #2196F3;
+&__link{
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+ outline: 1px solid $et-textcolor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-property: outline;
+  
+  // transition-duration: 250ms;
+  // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+  @extend %css-transition;
+  @media screen and (min-width:486px) {
+      width: 210px;
+    }
+    @media screen and (min-width:768px) {
+      width: 226px;
+    }
+    @media screen and (min-width:1200px) {
+      width: 170px;
     }
 }
 
-.client-icon{
-    width: 106px;
-height: 60px;
-fill: #AFB1B8;
-transition-property: fill;
+&__link:hover,
+&__link:focus{
+    border: none;
+    outline: 1px solid $akcen-tcolor;
     
-    // transition-duration: 250ms;
-    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
-    @extend %css-transition;
+    .client-icon{
+        fill: $akcen-tcolor;
+    }
 }
+
+&__icon{
+  width: 106px;
+height: 60px;
+fill: $et-textcolor;
+transition-property: fill;
+  
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+  
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

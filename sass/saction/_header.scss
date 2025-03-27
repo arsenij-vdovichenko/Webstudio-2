@@ -1,6 +1,6 @@
 .header {
     padding: 10px 0;
-    border-bottom: 1px solid $header-line;
+    border-bottom: 1px solid $akcen-tcolor;
     @media screen and (min-width:768px) {
       padding: 21px 0;
     }
@@ -16,7 +16,7 @@
     }
   
     &__logo {
-      color: $logo-color;
+      color: $logo-colot;
       font-family: "Raleway";
       font-size: 24px;
       font-weight: 700;
@@ -45,8 +45,8 @@
       }
     }
   
-    &__color {
-      color: $accent-color;
+    &__span {
+      color: $akcen-tcolor;
     }
   
     &__list {
@@ -81,21 +81,21 @@
       &:hover,
       &:focus {
         .header__cell {
-          color: $accent-color;
+          color: $akcen-tcolor;
         }
         .header__icon {
-          fill: $accent-color;
+          fill: $akcen-tcolor;
         }
       }
     }
   
     &__cell {
-      color: $added-text;
+      color: $et-textcolor;
       font-size: 14px;
       font-weight: 500;
       line-height: 1.14;
       letter-spacing: 0.28px;
-      
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
   
     &__icon {
@@ -124,7 +124,7 @@
     }
   
     &__link {
-      color: $text-color;
+      color: $main-text;
       font-size: 14px;
       font-weight: 500;
       line-height: 1.14;
@@ -133,20 +133,20 @@
   
       &:hover,
       &:focus {
-        color: $accent-color;
+        color: $akcen-tcolor;
       }
     }
   }
   
   .curent {
-    color: $accent-color;
+    color: $akcen-tcolor;
   
     &::after {
       content: "";
       display: block;
       opacity: 0;
       border-radius: 2px;
-      background-color: $accent-color;
+      background-color: $akcen-tcolor;
       width: 100%;
       height: 4px;
       position: absolute;
