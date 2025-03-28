@@ -11,64 +11,53 @@
     visibility: visible;
     transition-property: visibility;
     transition-duration: 250ms;
-}
+     }
+    
 
-.is-hidden{
-    /* opacity: 0; */
-    pointer-events: none;
-    visibility: hidden;
-    transition-property: visibility;
+     .modal{
+        width: 528px;
+    
+    border-radius: 4px;
+    background: $title-color;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(360deg) scale(1);
+    padding: 40px;
+    transition-property: transform;
     transition-duration: 250ms;
-}
+    
 
-.is-hidden .modal{
-    transform: translate(0) rotate(0) scale(0);
-}
+    &__close{
+        width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 1px solid rgba(0, 0, 0, 0.10);
+    border: none;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    }
 
-.modal{
-    width: 528px;
-
-border-radius: 4px;
-background: #FFF;
-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%,-50%) rotate(360deg) scale(1);
-padding: 40px;
-transition-property: transform;
-transition-duration: 250ms;
-}
-
-.modal-close{
-    width: 30px;
-height: 30px;
-background-color: transparent;
-border-radius: 50%;
-display: flex;
-justify-content: center;
-align-items: center;
-outline: 1px solid rgba(0, 0, 0, 0.10);
-border: none;
-position: absolute;
-right: 8px;
-top: 8px;
-}
-
-.modal-close:hover,
-.modal-close:focus{
-    .modal-buttonsvg{
-        fill: #2196F3;
+    &__close:hover,
+&__close:focus{
+    &-buttonsvg{
+        fill: $akcen-tcolor;
     }
 }
 
-.modal-buttonsvg{
+&__buttonsvg{
     width: 18px;
 height: 18px;
 
 }
 
-.modal-title{
+&__title{
     color:$main-text;
 
 text-align: center;
@@ -81,8 +70,8 @@ letter-spacing: 0.6px;
 margin-bottom: 12px;
 }
 
-.modal-label{
-    color: #757575;
+&__label{
+    color: $et-textcolor;
 font-family: Roboto;
 font-size: 12px;
 font-style: normal;
@@ -91,11 +80,11 @@ line-height: normal;
 letter-spacing: 0.12px;
 }
 
-.modal-wrap{
+&__wrap{
     position: relative;
 }
 
-.modal-input{
+&__input{
     width: 448px;
 height: 40px;
 border-radius: 4px;
@@ -105,18 +94,17 @@ margin-bottom: 10px;
 padding-left: 42px;
 }
 
-.modal-input:hover,
-.modal-input:focus{
+&__input:hover,
+&__input:focus{
     border: none;
-    outline: 1px solid #2196F3;
+    outline: 1px solid $akcen-tcolor;
 }
 
-.modal-input:hover + .modal-svg,
-.modal-input:focus + .modal-svg{
-    fill: #2196F3;
+&__input:hover + .modal__svg,
+&__input:focus + .modal__svg{
+    fill: $akcen-tcolor;
 }
-
-.modal-svg{
+&__svg{
     width: 18px;
 height: 18px;
 position: absolute;
@@ -126,7 +114,7 @@ left: 12px;
 
 }
 
-.modal-coment{
+&__coment{
     width: 448px;
 height: 120px;
 resize: none;
@@ -137,13 +125,13 @@ padding-bottom: 12px;
 margin-top: 4px;
 }
 
-.modal-check{
+&__check{
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
 
-.checkbox-span{
+&__span{
     color: $et-textcolor;
 font-family: Roboto;
 font-size: 14px;
@@ -154,8 +142,8 @@ letter-spacing: 0.42px;
 margin-left: 9px;
 }
 
-.modal-link{
-    color: #2196F3;
+&__link{
+    color: $akcen-tcolor;
 font-family: Roboto;
 font-size: 14px;
 font-style: normal;
@@ -170,10 +158,10 @@ text-underline-offset: auto;
 text-underline-position: from-font;
 }
 
-.modal-button{
+&__button{
     padding: 10px 52px;
     border-radius: 4px;
-background: #2196F3;
+background: $akcen-tcolor;
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 color: #FFF;
 text-align: center;
@@ -189,3 +177,50 @@ display: block;
 margin-right: auto;
 margin-left: auto;
 }
+}
+
+
+
+.is-hidden{
+    /* opacity: 0; */
+    pointer-events: none;
+    visibility: hidden;
+    transition-property: visibility;
+    transition-duration: 250ms;
+}
+
+.is-hidden .modal{
+    transform: translate(0) rotate(0) scale(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
