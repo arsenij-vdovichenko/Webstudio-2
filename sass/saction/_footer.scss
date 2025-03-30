@@ -137,10 +137,8 @@
 }
 
 &__divinput{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     
+    margin-left: auto;
 }
 
 &__label{
@@ -153,9 +151,12 @@ font-weight: 700;
 line-height: normal;
 letter-spacing: 0.42px;
 text-transform: uppercase;
-margin-left: 93px;
+margin-bottom: 20px;
+}
 
-
+&__wrapp{
+    display: flex;
+    align-items: center;
 }
 
 &__input{
@@ -190,11 +191,11 @@ font-weight: 700;
 line-height: 30px; /* 187.5% */
 letter-spacing: 0.96px;
 margin-left: 12px;
-margin-top: 20px;
+border: none;
 
 }
 
-&-buttonsvg{
+&__buttonsvg{
     width: 24px;
 height: 24px;
 fill: $title-color;
@@ -203,14 +204,7 @@ margin-left: 10px;
 
 }
 
-&-buttonsvg{
-    width: 24px;
-height: 24px;
-fill: $title-color;
-margin-left: 10px;
 
-
-}
 
 &__box{
     margin-left: 70px;

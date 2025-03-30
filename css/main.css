@@ -21,6 +21,10 @@ address {
   font-style: normal;
 }
 
+button {
+  bottom: none;
+}
+
 .portfolio__btn:hover, .footer__link, .client__link, .workers__link {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -692,9 +696,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer__divinput {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-left: auto;
 }
 .footer__label {
   color: #FFF;
@@ -705,7 +707,11 @@ body {
   line-height: normal;
   letter-spacing: 0.42px;
   text-transform: uppercase;
-  margin-left: 93px;
+  margin-bottom: 20px;
+}
+.footer__wrapp {
+  display: flex;
+  align-items: center;
 }
 .footer__input {
   font-size: 16px;
@@ -736,15 +742,9 @@ body {
   line-height: 30px; /* 187.5% */
   letter-spacing: 0.96px;
   margin-left: 12px;
-  margin-top: 20px;
+  border: none;
 }
-.footer-buttonsvg {
-  width: 24px;
-  height: 24px;
-  fill: #FFF;
-  margin-left: 10px;
-}
-.footer-buttonsvg {
+.footer__buttonsvg {
   width: 24px;
   height: 24px;
   fill: #FFF;
@@ -770,7 +770,7 @@ body {
 }
 
 .modal {
-  width: 528px;
+  width: 90%;
   border-radius: 4px;
   background: #FFF;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
@@ -781,6 +781,16 @@ body {
   padding: 40px;
   transition-property: transform;
   transition-duration: 250ms;
+}
+@media screen and (min-width: 480pxpx) {
+  .modal {
+    width: 450pxpx;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 .modal__close {
   width: 30px;
@@ -929,17 +939,19 @@ body {
 }
 .portfolio__listbutton {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
   gap: 8px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
-.portfolio__listbutton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  padding-bottom: 50px;
+@media screen and (min-width: 768px) {
+  .portfolio__listbutton {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__listbutton {
+    margin-bottom: 50px;
+  }
 }
 .portfolio__btn {
   color: #212121;
@@ -974,9 +986,24 @@ body {
 }
 .portfolio__item {
   outline: 1px solid #EEE;
-  flex-basis: calc((100% - 60px) / 3);
+  flex-basis: 100%;
   transition-property: box-shadow;
   transition-duration: 250ms;
+}
+@media screen and (min-width: 480px) {
+  .portfolio__item {
+    flex-basis: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 .portfolio__overlay {
   position: relative;

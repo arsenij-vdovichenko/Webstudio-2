@@ -15,7 +15,7 @@
     
 
      .modal{
-        width: 528px;
+        width: 90%;
     
     border-radius: 4px;
     background: $title-color;
@@ -27,6 +27,14 @@
     padding: 40px;
     transition-property: transform;
     transition-duration: 250ms;
+
+    @media screen and (min-width:480pxpx){
+        width: 450pxpx;
+    }
+
+    @media screen and (min-width:1200px){
+        width: 528px;
+    }
     
 
     &__close{
