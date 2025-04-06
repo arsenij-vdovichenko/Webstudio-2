@@ -1,11 +1,13 @@
 .workers{
-    background-color: $tem-background;
+    padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+  background-color: $team-background;
+
+  @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
-    @media screen and (min-width: 1200px) {
-        padding-top: 94px;
-        padding-bottom: 94px;
-      }
+  }
 
       &__title{
         color: $main-text;
