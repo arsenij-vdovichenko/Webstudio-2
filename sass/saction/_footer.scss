@@ -56,7 +56,7 @@
     font-weight: 400;
     line-height: 1.71; /* 171.429% */
     letter-spacing: 0.42px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
     }
 
     &__phone{
@@ -65,7 +65,7 @@
         font-weight: 400;
         line-height: 1.71; /* 171.429% */
         letter-spacing: 0.42px;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
           
     }
 
@@ -73,6 +73,7 @@
     &__phone:focus{
         .footer__phone {
             color: $akcen-tcolor;
+            @extend %css-transition;
           }
           
 
@@ -82,6 +83,7 @@
     &__email:focus{
         .footer__email {
             color: $akcen-tcolor;
+            @extend %css-transition;
           }
           
 
