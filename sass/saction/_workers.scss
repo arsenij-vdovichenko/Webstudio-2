@@ -2,7 +2,7 @@
     padding-top: 60px;
   padding-bottom: 60px;
   text-align: center;
-  background-color: $team-background;
+  background-color: $tem-background;
 
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
@@ -28,6 +28,7 @@
     &__list{
         display: flex;
         gap: 30px;
+        flex-wrap: wrap;
     }
 
     &__item{
@@ -46,10 +47,7 @@
       }
     }
 
-    &__img{
-        width: 270px;
-    height: 260px;
-    }
+   
 
     &__div{
         padding-top: 30px;
