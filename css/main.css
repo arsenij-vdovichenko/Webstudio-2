@@ -761,7 +761,7 @@ body {
 }
 .footer__wrap {
   display: flex;
-  align-items: baseline;
+  flex-wrap: wrap;
 }
 @media screen and (min-width: 768px) {
   .footer__wrap {
@@ -823,6 +823,20 @@ body {
 }
 .footer__email:hover .footer__email, .footer__email:focus .footer__email {
   color: #2196F3;
+}
+.footer__box {
+  margin-top: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer__box {
+    margin-left: 165px;
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__box {
+    margin-left: 70px;
+  }
 }
 .footer__title {
   color: #FFF;
@@ -886,6 +900,14 @@ body {
 .footer__wrapp {
   display: flex;
   align-items: center;
+  gap: 20px;
+  flex-direction: column;
+}
+@media screen and (min-width: 1200px) {
+  .footer__wrapp {
+    flex-direction: row;
+    gap: 12px;
+  }
 }
 .footer__input {
   font-size: 16px;
@@ -1141,6 +1163,7 @@ body {
 @media screen and (min-width: 768px) {
   .portfolio__listbutton {
     justify-content: center;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
