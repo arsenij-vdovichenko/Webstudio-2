@@ -24,10 +24,10 @@ address {
 }
 
 button {
-  bottom: none;
+  border: none;
 }
 
-.portfolio__btn:hover, .footer__link, .footer__email:hover .footer__email, .footer__email:focus .footer__email, .footer__phone:hover .footer__phone, .footer__phone:focus .footer__phone, .client__link, .workers__link {
+.footer__link, .footer__email:hover .footer__email, .footer__email:focus .footer__email, .footer__phone:hover .footer__phone, .footer__phone:focus .footer__phone, .client__link, .workers__link {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -238,8 +238,6 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  outline: rgba(0, 0, 0, 0);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -250,11 +248,10 @@ body {
 .menu__close:hover .menu__close, .menu__close:focus .menu__close {
   fill: #2196F3;
 }
-.menu__close {
-  width: 30px;
-  height: 30px;
-  fill: rgb(0, 0, 0);
-  visibility: visible;
+.menu__icon {
+  width: 40px;
+  height: 40px;
+  fill: #212121;
 }
 .menu__list {
   display: flex;
@@ -647,7 +644,10 @@ body {
   width: 20px;
   height: 20px;
   flex-shrink: 0;
-  fill: #757575;
+  fill: #AFB1B8;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client {
@@ -704,14 +704,14 @@ body {
   }
 }
 .client__element:hover {
-  border: 1px solid #2196F3;
+  outline: 1px solid #2196F3;
   border-radius: 4px;
 }
 .client__link {
   width: 100%;
   height: 92px;
   border-radius: 4px;
-  outline: 1px solid #757575;
+  outline: 1px solid #AFB1B8;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -736,13 +736,13 @@ body {
   border: none;
   outline: 1px solid #2196F3;
 }
-.client__link:hover .client-icon, .client__link:focus .client-icon {
+.client__link:hover .client__icon, .client__link:focus .client__icon {
   fill: #2196F3;
 }
 .client__icon {
   width: 106px;
   height: 60px;
-  fill: #757575;
+  fill: #AFB1B8;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -762,10 +762,20 @@ body {
 .footer__wrap {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
 }
 @media screen and (min-width: 768px) {
   .footer__wrap {
     flex-direction: row;
+    align-items: baseline;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__wrap {
+    text-align: start;
   }
 }
 .footer__logo {
@@ -921,7 +931,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
   background: rgba(33, 150, 243, 0);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  width: 358px;
+  width: 100%;
 }
 @media screen and (min-width: 480px) {
   .footer__input {
@@ -934,20 +944,16 @@ body {
   }
 }
 .footer__button {
-  width: 200px;
-  height: 50px;
+  padding: 10px 32px;
   border-radius: 4px;
   background: #2196F3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   color: #FFF;
   text-align: center;
-  font-family: Roboto;
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 30px; /* 187.5% */
+  line-height: 1.87; /* 187.5% */
   letter-spacing: 0.96px;
-  margin-left: 12px;
   border: none;
 }
 .footer__buttonsvg {
@@ -955,20 +961,6 @@ body {
   height: 24px;
   fill: #FFF;
   margin-left: 10px;
-}
-.footer__box {
-  margin-left: 60px;
-}
-@media screen and (min-width: 768px) {
-  .footer__box {
-    margin-left: 165px;
-    margin-top: 0;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer__box {
-    margin-left: 70px;
-  }
 }
 
 .backdrop {
@@ -1157,7 +1149,9 @@ body {
 .portfolio__listbutton {
   display: flex;
   justify-content: start;
+  row-gap: 15px;
   gap: 8px;
+  flex-wrap: wrap;
   margin-bottom: 50px;
 }
 @media screen and (min-width: 768px) {
@@ -1183,12 +1177,13 @@ body {
   border-radius: 4px;
   background: #F5F4FA;
   border: none;
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio__btn:hover {
   color: #FFF;
   background-color: #2196F3;
-  border-radius: 4px;
-  border: none;
   /* shadow-middle */
   box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
 }
@@ -1234,8 +1229,8 @@ body {
 .portfolio__item:hover {
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 6px 0px rgba(0, 0, 0, 0.25);
 }
-.portfolio__item:hover__desk {
-  visibility: visible;
+.portfolio__item:hover .portfolio__desk {
+  opacity: 1;
   transform: translateY(0);
 }
 .portfolio__desk {
@@ -1247,13 +1242,11 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  visibility: hidden;
+  opacity: 1;
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
-  transition-property: transform, visibility;
+  transition-property: transform, opacity;
   transition-duration: 250ms;
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 400;
   line-height: 28px;
   letter-spacing: 0.54px;
